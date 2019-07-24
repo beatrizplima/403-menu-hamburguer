@@ -51,3 +51,20 @@ section a{
     transform: translateX(0);
     background-color: blueviolet;
 }
+
+.sumirIgualTiro{
+    transform: translateX(-70vw);
+    transition: 0.3s;
+}
+
+.virarX1{
+    transform: rotate(-45deg);
+    transform-origin: right center;
+}
+
+.virarX2{
+    transform: rotate(45deg);
+    transform-origin: right center;
+    position: relative;
+    top: 8px;
+}
