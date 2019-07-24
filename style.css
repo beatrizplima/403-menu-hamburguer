@@ -4,7 +4,7 @@
 
 nav{
     width: 100%;
-    height: 50px;
+    height: 100px;
     background-color: black;
     display: flex;
     align-items: center;
@@ -18,6 +18,7 @@ nav div{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 nav div span{
@@ -25,6 +26,21 @@ nav div span{
     height: 8px;
     background-color: palevioletred;
     border-radius: 10px;
+}
+
+#div2{
+    width: 700px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+#div2 a{
+    text-decoration: none;
+    font-size: 14pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
 section{
@@ -39,12 +55,17 @@ section{
     transition: 1.0s;
 }
 
-section a{
-    text-decoration: none;
-    margin-top: 20px;
-    font-size: 16pt;
-    color: navy;
-    font-weight: bolder;
+section div{
+    display: flex;
+
+}
+
+section .aparecerMenu{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .aparecerMenu{
@@ -68,3 +89,39 @@ section a{
     position: relative;
     top: 8px;
 }
+
+@media(min-width: 767px){
+    *{
+        margin: 0;
+    }
+    nav{
+        display: flex;
+    }
+
+    nav div{
+        display: flex;
+    }
+    section div{
+        display: none;
+    }
+    nav #div2{
+        display: none;
+    }
+}
+
+@media(min-width: 768px){
+section div{
+    display: block;
+}
+
+nav #div2{
+    display: flex;
+    flex-direction: row;
+}
+nav div{
+    display: none;
+}
+
+
+}
+
